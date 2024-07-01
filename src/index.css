@@ -1,0 +1,85 @@
+/* Header.css */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content.css */
+.content {
+    flex: 1; /* Занимать все доступное пространство между header и footer */
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project p {
+    margin-top: 10px;
+}
+
+.project img {
+    width: 400px; /* Фиксированная ширина */
+    height: 550px; /* Фиксированная высота */
+    object-fit: cover; /* Заполняет контейнер, сохраняя соотношение сторон и обрезая лишнее */
+    border-radius: 8px;
+}
+
